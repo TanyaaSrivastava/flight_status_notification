@@ -31,8 +31,8 @@ This project uses the following technologies:
 - **Mongoose**: For interacting with MongoDB.
 - **Vonage**: For sending SMS.
 - **Nodemailer**: For sending emails.
-
-  ## Result
+  
+ ## Result
  **Add Passenger**: User can add passenger details.
 
  **Update Flight Status**: User will be provided update flight status and notify them.
@@ -42,10 +42,3 @@ This project uses the following technologies:
 
 
 
-
-## Notes
-- Ensure phone numbers are in the correct international format (e.g., +919876543210 for an Indian number).
-- Verify that your Vonage account has enough balance and is allowed to send messages to the regions you're targeting.
-
-## License
-This project is licensed under the MIT License.
