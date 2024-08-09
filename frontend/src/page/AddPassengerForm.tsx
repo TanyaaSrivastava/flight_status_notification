@@ -19,19 +19,7 @@ const AddPassengerForm: React.FC = () => {
     e.preventDefault();
     setError(null);
     setSuccess(null);
-
-    try {
-      await addPassenger({ name, mobile, email, flightNumber });
-      setSuccess('Passenger added successfully');
-      setName('');
-      setMobile('');
-      setEmail('');
-      setFlightNumber('');
-    } catch (err: any) {
-      setError(err.response?.data?.message || 'Error adding passenger');
-    }
-  };
-
+  }
   return (
     <Box component="form" onSubmit={handleSubmit} sx={{ mt: 2 }}>
       {error && <Alert severity="error">{error}</Alert>}
@@ -70,7 +58,7 @@ const AddPassengerForm: React.FC = () => {
         margin="normal"
         required
       >
-        {flightNumbers.map((flight) => (
+   {flightNumbers.map((flight) => (
           <MenuItem key={flight} value={flight}>
             {flight}
           </MenuItem>

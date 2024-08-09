@@ -7,7 +7,7 @@ const apiClient = axios.create({
   },
 });
 
-export const addPassenger = async (data: { name: string; mobile: string; email: string; flightNumber: string }) => {
+export const addPassenger = async (data: { name: string; mobile: string; email: string; flightNumber: string; date: Number }) => {
   return apiClient.post('/addPassenger', data);
 };
 
