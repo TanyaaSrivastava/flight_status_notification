@@ -31,6 +31,7 @@ This project uses the following technologies:
 - **Mongoose**: For interacting with MongoDB.
 - **Vonage**: For sending SMS.
 - **Nodemailer**: For sending emails.
+- **PDF Document**: For generating pdf
   
  ## Result
  **Add Passenger**: User can add passenger details.
