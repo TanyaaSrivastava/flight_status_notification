@@ -14,6 +14,14 @@ const UpdateFlightStatusForm: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
 
+  const handleFlightNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFlightNumber(e.target.value);
+};
+
+const handleStatus = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setStatus(e.target.value);
+};
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
